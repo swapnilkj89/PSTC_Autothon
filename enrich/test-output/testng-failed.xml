@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="com.monsantoReport.ExtentReporterNG"/>
+  </listeners>
+  <test name="Test(failed)">
+    <classes>
+      <class name="com.monsanto.testcases.HomePageTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="checkCreatedComponentonInternationalTaxation"/>
+          <include name="checkConfirmationMessageOnComponentonTaxation"/>
+          <include name="checkCreatedComponentonStateTaxation"/>
+          <include name="checkStatusOfAddProductButtonOnHomePage"/>
+          <include name="setUp"/>
+          <include name="checkCreatedProduct"/>
+          <include name="checkEditedCategory"/>
+          <include name="checkUpdatedComponentonStateTaxation"/>
+          <include name="checkCreatedTAG"/>
+          <include name="checkIconIsPresentOnConfirmationMessageOnComponentonTaxation"/>
+          <include name="checkConfirmationSuccessMessageOnComponentonTaxation"/>
+          <include name="checkCreatedCategory"/>
+          <include name="checkUpdatedComponentonInternationalTaxation"/>
+        </methods>
+      </class> <!-- com.monsanto.testcases.HomePageTest -->
+      <class name="com.monsanto.testcases.LoginPageTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.monsanto.testcases.LoginPageTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" parallel="tests">
+  <listeners>
+    <listener class-name="com.enrichReport.ExtentReporterNG"/>
+  </listeners>
+  <test name="Test(failed)" parallel="tests">
+    <classes>
+      <class name="com.enrich.testcases.SignUpPageTest">
+        <methods>
+          <include name="checkReferralCodeFieldStatus"/>
+          <include name="checkConnectWithEmailFaceBookButtonStatus"/>
+          <include name="checkDoYouHaveAReferralCodeCheckboxText"/>
+          <include name="checkEnrichImageStatus"/>
+          <include name="checkcheckDoYouHaveAReferralCodeCheckboxNotSelected"/>
+          <include name="checkCrossIconStatus"/>
+          <include name="checkApplyButtonText"/>
+          <include name="checkConnectWithEmailButtonText"/>
+          <include name="checkConnectWithEmailButtonStatus"/>
+          <include name="checkConnectWithEmailFacebookButtonText"/>
+          <include name="checkConnectWithEmailGoogleButtonText"/>
+          <include name="checkLoginButtonText"/>
+          <include name="checkConnectWithEmailGoogleButtonStatus"/>
+          <include name="checkYouHaveAReferralCodeCheckboxStatus"/>
+          <include name="checkApplyButtonClickMessage"/>
+          <include name="checkLoginButtonStatus"/>
+          <include name="checkReferralCodeFieldIsBlank"/>
+          <include name="setUp"/>
+          <include name="checkCrossIconClick"/>
+          <include name="checkNextIconButtonStatus"/>
+          <include name="checkReferralCodeFieldSupplyText"/>
+          <include name="checkApplyButtonStatus"/>
+          <include name="checkDoYouHaveAReferralCodeCheckboxSelected"/>
+        </methods>
+      </class> <!-- com.enrich.testcases.SignUpPageTest -->
+      <class name="com.enrich.testcases.HomePageTest">
+        <methods>
+          <include name="checkSignUPButtonText"/>
+          <include name="clickOnBookAnAppointmentButton"/>
+          <include name="checkBookAnAppointmentButtonText"/>
+          <include name="setUp"/>
+          <include name="checkSearchSalonButtonStatus"/>
+          <include name="checkSearchSalonButtonText"/>
+          <include name="checkSignUPButtonStatus"/>
+          <include name="checkBookAnAppointmentButtonStatus"/>
+          <include name="tearDown"/>
+          <include name="clickOnSearchSalonButton"/>
+          <include name="clickOnSignUPButton"/>
+        </methods>
+      </class> <!-- com.enrich.testcases.HomePageTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

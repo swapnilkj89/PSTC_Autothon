@@ -1,0 +1,996 @@
+<html>
+<head>
+<title>TestNG:  Real Devices Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Real Devices Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>0/9/22</td>
+</tr><tr>
+<td>Started on:</td><td>Fri May 17 16:55:54 IST 2019</td>
+</tr>
+<tr><td>Total time:</td><td>22 seconds (22692 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.enrich.testcases.SignUpPageTest.setUp()'><b>setUp</b><br>Test class: com.enrich.testcases.SignUpPageTest</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;SEZ-LAP-49&apos;, ip: &apos;172.52.80.170&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_171&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appActivity: com.enrich.salonapp.splash...., appPackage: com.enrich.salonapp, databaseEnabled: false, desired: {appActivity: com.enrich.salonapp.splash...., appPackage: com.enrich.salonapp, deviceName: My Phone, noReset: true, platformName: android, platformVersion: 9.0, udid: 4d61917}, deviceManufacturer: Xiaomi, deviceModel: Mi A2, deviceName: 4d61917, deviceScreenSize: 1080x2160, deviceUDID: 4d61917, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, noReset: true, platform: LINUX, platformName: Android, platformVersion: 9, takesScreenshot: true, udid: 4d61917, warnings: {}, webStorageEnabled: false}
+Session ID: 1b353754-a152-4160-ae7b-46b683ae75c5
+*** Element info: {Using=-android uiautomator, value=new UiSelector().text(&quot;SIGNUP&quot;)}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:62)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at io.appium.java_client.FindsByAndroidUIAutomator.findElementByAndroidUIAutomator(FindsByAndroidUIAutomator.java:38)
+	at com.enrich.pages.HomePage.signUpButtonClick(HomePage.java:64)
+	at com.enrich.testcases.SignUpPageTest.setUp(SignUpPageTest.java:29)
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1046665075", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1046665075'><pre>org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;SEZ-LAP-49&apos;, ip: &apos;172.52.80.170&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_171&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appActivity: com.enrich.salonapp.splash...., appPackage: com.enrich.salonapp, databaseEnabled: false, desired: {appActivity: com.enrich.salonapp.splash...., appPackage: com.enrich.salonapp, deviceName: My Phone, noReset: true, platformName: android, platformVersion: 9.0, udid: 4d61917}, deviceManufacturer: Xiaomi, deviceModel: Mi A2, deviceName: 4d61917, deviceScreenSize: 1080x2160, deviceUDID: 4d61917, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, noReset: true, platform: LINUX, platformName: Android, platformVersion: 9, takesScreenshot: true, udid: 4d61917, warnings: {}, webStorageEnabled: false}
+Session ID: 1b353754-a152-4160-ae7b-46b683ae75c5
+*** Element info: {Using=-android uiautomator, value=new UiSelector().text(&quot;SIGNUP&quot;)}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:62)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at io.appium.java_client.FindsByAndroidUIAutomator.findElementByAndroidUIAutomator(FindsByAndroidUIAutomator.java:38)
+	at com.enrich.pages.HomePage.signUpButtonClick(HomePage.java:64)
+	at com.enrich.testcases.SignUpPageTest.setUp(SignUpPageTest.java:29)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:653)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.enrich.testcases.SignUpPageTest@3bfdc050</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.enrich.testcases.SignUpPageTest.setUp()'><b>setUp</b><br>Test class: com.enrich.testcases.SignUpPageTest</td>
+<td></td>
+<td>0</td>
+<td>com.enrich.testcases.SignUpPageTest@3bfdc050</td></tr>
+<tr>
+<td title='com.enrich.testcases.SignUpPageTest.setUp()'><b>setUp</b><br>Test class: com.enrich.testcases.SignUpPageTest</td>
+<td></td>
+<td>0</td>
+<td>com.enrich.testcases.SignUpPageTest@3bfdc050</td></tr>
+<tr>
+<td title='com.enrich.testcases.SignUpPageTest.setUp()'><b>setUp</b><br>Test class: com.enrich.testcases.SignUpPageTest</td>
+<td></td>
+<td>0</td>
+<td>com.enrich.testcases.SignUpPageTest@3bfdc050</td></tr>
+<tr>
+<td title='com.enrich.testcases.SignUpPageTest.setUp()'><b>setUp</b><br>Test class: com.enrich.testcases.SignUpPageTest</td>
+<td></td>
+<td>0</td>
+<td>com.enrich.testcases.SignUpPageTest@3bfdc050</td></tr>
+<tr>
+<td title='com.enrich.testcases.SignUpPageTest.setUp()'><b>setUp</b><br>Test class: com.enrich.testcases.SignUpPageTest</td>
+<td></td>
+<td>0</td>
+<td>com.enrich.testcases.SignUpPageTest@3bfdc050</td></tr>
+<tr>
+<td title='com.enrich.testcases.SignUpPageTest.setUp()'><b>setUp</b><br>Test class: com.enrich.testcases.SignUpPageTest</td>
+<td></td>
+<td>0</td>
+<td>com.enrich.testcases.SignUpPageTest@3bfdc050</td></tr>
+<tr>
+<td title='com.enrich.testcases.SignUpPageTest.setUp()'><b>setUp</b><br>Test class: com.enrich.testcases.SignUpPageTest</td>
+<td></td>
+<td>0</td>
+<td>com.enrich.testcases.SignUpPageTest@3bfdc050</td></tr>
+<tr>
+<td title='com.enrich.testcases.SignUpPageTest.setUp()'><b>setUp</b><br>Test class: com.enrich.testcases.SignUpPageTest</td>
+<td></td>
+<td>0</td>
+<td>com.enrich.testcases.SignUpPageTest@3bfdc050</td></tr>
+<tr>
+<td title='com.enrich.testcases.SignUpPageTest.setUp()'><b>setUp</b><br>Test class: com.enrich.testcases.SignUpPageTest</td>
+<td></td>
+<td>0</td>
+<td>com.enrich.testcases.SignUpPageTest@3bfdc050</td></tr>
+<tr>
+<td title='com.enrich.testcases.SignUpPageTest.setUp()'><b>setUp</b><br>Test class: com.enrich.testcases.SignUpPageTest</td>
+<td></td>
+<td>0</td>
+<td>com.enrich.testcases.SignUpPageTest@3bfdc050</td></tr>
+<tr>
+<td title='com.enrich.testcases.SignUpPageTest.setUp()'><b>setUp</b><br>Test class: com.enrich.testcases.SignUpPageTest</td>
+<td></td>
+<td>0</td>
+<td>com.enrich.testcases.SignUpPageTest@3bfdc050</td></tr>
+<tr>
+<td title='com.enrich.testcases.SignUpPageTest.setUp()'><b>setUp</b><br>Test class: com.enrich.testcases.SignUpPageTest</td>
+<td></td>
+<td>0</td>
+<td>com.enrich.testcases.SignUpPageTest@3bfdc050</td></tr>
+<tr>
+<td title='com.enrich.testcases.SignUpPageTest.setUp()'><b>setUp</b><br>Test class: com.enrich.testcases.SignUpPageTest</td>
+<td></td>
+<td>0</td>
+<td>com.enrich.testcases.SignUpPageTest@3bfdc050</td></tr>
+<tr>
+<td title='com.enrich.testcases.SignUpPageTest.setUp()'><b>setUp</b><br>Test class: com.enrich.testcases.SignUpPageTest</td>
+<td></td>
+<td>0</td>
+<td>com.enrich.testcases.SignUpPageTest@3bfdc050</td></tr>
+<tr>
+<td title='com.enrich.testcases.SignUpPageTest.setUp()'><b>setUp</b><br>Test class: com.enrich.testcases.SignUpPageTest</td>
+<td></td>
+<td>0</td>
+<td>com.enrich.testcases.SignUpPageTest@3bfdc050</td></tr>
+<tr>
+<td title='com.enrich.testcases.SignUpPageTest.setUp()'><b>setUp</b><br>Test class: com.enrich.testcases.SignUpPageTest</td>
+<td></td>
+<td>0</td>
+<td>com.enrich.testcases.SignUpPageTest@3bfdc050</td></tr>
+<tr>
+<td title='com.enrich.testcases.SignUpPageTest.setUp()'><b>setUp</b><br>Test class: com.enrich.testcases.SignUpPageTest</td>
+<td></td>
+<td>0</td>
+<td>com.enrich.testcases.SignUpPageTest@3bfdc050</td></tr>
+<tr>
+<td title='com.enrich.testcases.SignUpPageTest.setUp()'><b>setUp</b><br>Test class: com.enrich.testcases.SignUpPageTest</td>
+<td></td>
+<td>0</td>
+<td>com.enrich.testcases.SignUpPageTest@3bfdc050</td></tr>
+<tr>
+<td title='com.enrich.testcases.SignUpPageTest.setUp()'><b>setUp</b><br>Test class: com.enrich.testcases.SignUpPageTest</td>
+<td></td>
+<td>0</td>
+<td>com.enrich.testcases.SignUpPageTest@3bfdc050</td></tr>
+<tr>
+<td title='com.enrich.testcases.SignUpPageTest.setUp()'><b>setUp</b><br>Test class: com.enrich.testcases.SignUpPageTest</td>
+<td></td>
+<td>0</td>
+<td>com.enrich.testcases.SignUpPageTest@3bfdc050</td></tr>
+<tr>
+<td title='com.enrich.testcases.SignUpPageTest.setUp()'><b>setUp</b><br>Test class: com.enrich.testcases.SignUpPageTest</td>
+<td></td>
+<td>0</td>
+<td>com.enrich.testcases.SignUpPageTest@3bfdc050</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.enrich.testcases.HomePageTest.checkBookAnAppointmentButtonStatus()'><b>checkBookAnAppointmentButtonStatus</b><br>Test class: com.enrich.testcases.HomePageTest</td>
+<td><div><pre>org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;SEZ-LAP-49&apos;, ip: &apos;172.52.80.170&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_171&apos;
+Driver info: driver.version: AndroidDriver
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:125)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:62)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at io.appium.java_client.FindsByAndroidUIAutomator.findElementByAndroidUIAutomator(FindsByAndroidUIAutomator.java:38)
+	at com.enrich.pages.HomePage.bookAnAppointmentButtonStatus(HomePage.java:78)
+	at com.enrich.testcases.HomePageTest.checkBookAnAppointmentButtonStatus(HomePageTest.java:84)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace438589491", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace438589491'><pre>org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;SEZ-LAP-49&apos;, ip: &apos;172.52.80.170&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_171&apos;
+Driver info: driver.version: AndroidDriver
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:125)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:62)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at io.appium.java_client.FindsByAndroidUIAutomator.findElementByAndroidUIAutomator(FindsByAndroidUIAutomator.java:38)
+	at com.enrich.pages.HomePage.bookAnAppointmentButtonStatus(HomePage.java:78)
+	at com.enrich.testcases.HomePageTest.checkBookAnAppointmentButtonStatus(HomePageTest.java:84)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.enrich.testcases.HomePageTest@39c0f4a</td></tr>
+<tr>
+<td title='com.enrich.testcases.HomePageTest.checkBookAnAppointmentButtonText()'><b>checkBookAnAppointmentButtonText</b><br>Test class: com.enrich.testcases.HomePageTest</td>
+<td><div><pre>org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;SEZ-LAP-49&apos;, ip: &apos;172.52.80.170&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_171&apos;
+Driver info: driver.version: AndroidDriver
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:125)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:62)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at io.appium.java_client.FindsByAndroidUIAutomator.findElementByAndroidUIAutomator(FindsByAndroidUIAutomator.java:38)
+	at com.enrich.pages.HomePage.bookAnAppointmentButtonText(HomePage.java:35)
+	at com.enrich.testcases.HomePageTest.checkBookAnAppointmentButtonText(HomePageTest.java:100)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1038677529", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1038677529'><pre>org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;SEZ-LAP-49&apos;, ip: &apos;172.52.80.170&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_171&apos;
+Driver info: driver.version: AndroidDriver
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:125)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:62)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at io.appium.java_client.FindsByAndroidUIAutomator.findElementByAndroidUIAutomator(FindsByAndroidUIAutomator.java:38)
+	at com.enrich.pages.HomePage.bookAnAppointmentButtonText(HomePage.java:35)
+	at com.enrich.testcases.HomePageTest.checkBookAnAppointmentButtonText(HomePageTest.java:100)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.enrich.testcases.HomePageTest@39c0f4a</td></tr>
+<tr>
+<td title='com.enrich.testcases.HomePageTest.checkSearchSalonButtonStatus()'><b>checkSearchSalonButtonStatus</b><br>Test class: com.enrich.testcases.HomePageTest</td>
+<td><div><pre>org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;SEZ-LAP-49&apos;, ip: &apos;172.52.80.170&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_171&apos;
+Driver info: driver.version: AndroidDriver
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:125)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:62)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at io.appium.java_client.FindsByAndroidUIAutomator.findElementByAndroidUIAutomator(FindsByAndroidUIAutomator.java:38)
+	at com.enrich.pages.HomePage.searchSalonButtonStatus(HomePage.java:56)
+	at com.enrich.testcases.HomePageTest.checkSearchSalonButtonStatus(HomePageTest.java:60)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1272883899", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1272883899'><pre>org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;SEZ-LAP-49&apos;, ip: &apos;172.52.80.170&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_171&apos;
+Driver info: driver.version: AndroidDriver
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:125)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:62)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at io.appium.java_client.FindsByAndroidUIAutomator.findElementByAndroidUIAutomator(FindsByAndroidUIAutomator.java:38)
+	at com.enrich.pages.HomePage.searchSalonButtonStatus(HomePage.java:56)
+	at com.enrich.testcases.HomePageTest.checkSearchSalonButtonStatus(HomePageTest.java:60)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.enrich.testcases.HomePageTest@39c0f4a</td></tr>
+<tr>
+<td title='com.enrich.testcases.HomePageTest.checkSearchSalonButtonText()'><b>checkSearchSalonButtonText</b><br>Test class: com.enrich.testcases.HomePageTest</td>
+<td><div><pre>org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;SEZ-LAP-49&apos;, ip: &apos;172.52.80.170&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_171&apos;
+Driver info: driver.version: AndroidDriver
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:125)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:62)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at io.appium.java_client.FindsByAndroidUIAutomator.findElementByAndroidUIAutomator(FindsByAndroidUIAutomator.java:38)
+	at com.enrich.pages.HomePage.searchSalonButtonText(HomePage.java:42)
+	at com.enrich.testcases.HomePageTest.checkSearchSalonButtonText(HomePageTest.java:44)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1292738535", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1292738535'><pre>org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;SEZ-LAP-49&apos;, ip: &apos;172.52.80.170&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_171&apos;
+Driver info: driver.version: AndroidDriver
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:125)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:62)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at io.appium.java_client.FindsByAndroidUIAutomator.findElementByAndroidUIAutomator(FindsByAndroidUIAutomator.java:38)
+	at com.enrich.pages.HomePage.searchSalonButtonText(HomePage.java:42)
+	at com.enrich.testcases.HomePageTest.checkSearchSalonButtonText(HomePageTest.java:44)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.enrich.testcases.HomePageTest@39c0f4a</td></tr>
+<tr>
+<td title='com.enrich.testcases.HomePageTest.checkSignUPButtonStatus()'><b>checkSignUPButtonStatus</b><br>Test class: com.enrich.testcases.HomePageTest</td>
+<td><div><pre>org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;SEZ-LAP-49&apos;, ip: &apos;172.52.80.170&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_171&apos;
+Driver info: driver.version: AndroidDriver
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:125)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:62)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at io.appium.java_client.FindsByAndroidUIAutomator.findElementByAndroidUIAutomator(FindsByAndroidUIAutomator.java:38)
+	at com.enrich.pages.HomePage.signUpButtonStatus(HomePage.java:49)
+	at com.enrich.testcases.HomePageTest.checkSignUPButtonStatus(HomePageTest.java:52)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1924949331", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1924949331'><pre>org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;SEZ-LAP-49&apos;, ip: &apos;172.52.80.170&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_171&apos;
+Driver info: driver.version: AndroidDriver
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:125)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:62)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at io.appium.java_client.FindsByAndroidUIAutomator.findElementByAndroidUIAutomator(FindsByAndroidUIAutomator.java:38)
+	at com.enrich.pages.HomePage.signUpButtonStatus(HomePage.java:49)
+	at com.enrich.testcases.HomePageTest.checkSignUPButtonStatus(HomePageTest.java:52)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.enrich.testcases.HomePageTest@39c0f4a</td></tr>
+<tr>
+<td title='com.enrich.testcases.HomePageTest.checkSignUPButtonText()'><b>checkSignUPButtonText</b><br>Test class: com.enrich.testcases.HomePageTest</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;SEZ-LAP-49&apos;, ip: &apos;172.52.80.170&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_171&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appActivity: com.enrich.salonapp.splash...., appPackage: com.enrich.salonapp, databaseEnabled: false, desired: {appActivity: com.enrich.salonapp.splash...., appPackage: com.enrich.salonapp, deviceName: My Phone, noReset: true, platformName: android, platformVersion: 9.0, udid: 4d61917}, deviceManufacturer: Xiaomi, deviceModel: Mi A2, deviceName: 4d61917, deviceScreenSize: 1080x2160, deviceUDID: 4d61917, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, noReset: true, platform: LINUX, platformName: Android, platformVersion: 9, takesScreenshot: true, udid: 4d61917, warnings: {}, webStorageEnabled: false}
+Session ID: 8f4241ba-733e-4fa6-9320-66c72f21f688
+*** Element info: {Using=-android uiautomator, value=new UiSelector().text(&quot;SIGNUP&quot;)}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:62)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at io.appium.java_client.FindsByAndroidUIAutomator.findElementByAndroidUIAutomator(FindsByAndroidUIAutomator.java:38)
+	at com.enrich.pages.HomePage.signUpButtonText(HomePage.java:28)
+	at com.enrich.testcases.HomePageTest.checkSignUPButtonText(HomePageTest.java:35)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1916575798", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1916575798'><pre>org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;SEZ-LAP-49&apos;, ip: &apos;172.52.80.170&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_171&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appActivity: com.enrich.salonapp.splash...., appPackage: com.enrich.salonapp, databaseEnabled: false, desired: {appActivity: com.enrich.salonapp.splash...., appPackage: com.enrich.salonapp, deviceName: My Phone, noReset: true, platformName: android, platformVersion: 9.0, udid: 4d61917}, deviceManufacturer: Xiaomi, deviceModel: Mi A2, deviceName: 4d61917, deviceScreenSize: 1080x2160, deviceUDID: 4d61917, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, noReset: true, platform: LINUX, platformName: Android, platformVersion: 9, takesScreenshot: true, udid: 4d61917, warnings: {}, webStorageEnabled: false}
+Session ID: 8f4241ba-733e-4fa6-9320-66c72f21f688
+*** Element info: {Using=-android uiautomator, value=new UiSelector().text(&quot;SIGNUP&quot;)}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:62)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at io.appium.java_client.FindsByAndroidUIAutomator.findElementByAndroidUIAutomator(FindsByAndroidUIAutomator.java:38)
+	at com.enrich.pages.HomePage.signUpButtonText(HomePage.java:28)
+	at com.enrich.testcases.HomePageTest.checkSignUPButtonText(HomePageTest.java:35)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.enrich.testcases.HomePageTest@39c0f4a</td></tr>
+<tr>
+<td title='com.enrich.testcases.HomePageTest.clickOnBookAnAppointmentButton()'><b>clickOnBookAnAppointmentButton</b><br>Test class: com.enrich.testcases.HomePageTest</td>
+<td><div><pre>org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;SEZ-LAP-49&apos;, ip: &apos;172.52.80.170&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_171&apos;
+Driver info: driver.version: AndroidDriver
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:125)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:62)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at io.appium.java_client.FindsByAndroidUIAutomator.findElementByAndroidUIAutomator(FindsByAndroidUIAutomator.java:38)
+	at com.enrich.pages.HomePage.bookAnAppointmentButtonClick(HomePage.java:85)
+	at com.enrich.testcases.HomePageTest.clickOnBookAnAppointmentButton(HomePageTest.java:92)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1107412069", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1107412069'><pre>org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;SEZ-LAP-49&apos;, ip: &apos;172.52.80.170&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_171&apos;
+Driver info: driver.version: AndroidDriver
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:125)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:62)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at io.appium.java_client.FindsByAndroidUIAutomator.findElementByAndroidUIAutomator(FindsByAndroidUIAutomator.java:38)
+	at com.enrich.pages.HomePage.bookAnAppointmentButtonClick(HomePage.java:85)
+	at com.enrich.testcases.HomePageTest.clickOnBookAnAppointmentButton(HomePageTest.java:92)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.enrich.testcases.HomePageTest@39c0f4a</td></tr>
+<tr>
+<td title='com.enrich.testcases.HomePageTest.clickOnSearchSalonButton()'><b>clickOnSearchSalonButton</b><br>Test class: com.enrich.testcases.HomePageTest</td>
+<td><div><pre>org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;SEZ-LAP-49&apos;, ip: &apos;172.52.80.170&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_171&apos;
+Driver info: driver.version: AndroidDriver
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:125)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:62)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at io.appium.java_client.FindsByAndroidUIAutomator.findElementByAndroidUIAutomator(FindsByAndroidUIAutomator.java:38)
+	at com.enrich.pages.HomePage.searchSalonButtonClick(HomePage.java:72)
+	at com.enrich.testcases.HomePageTest.clickOnSearchSalonButton(HomePageTest.java:77)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1551945522", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1551945522'><pre>org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;SEZ-LAP-49&apos;, ip: &apos;172.52.80.170&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_171&apos;
+Driver info: driver.version: AndroidDriver
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:125)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:62)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at io.appium.java_client.FindsByAndroidUIAutomator.findElementByAndroidUIAutomator(FindsByAndroidUIAutomator.java:38)
+	at com.enrich.pages.HomePage.searchSalonButtonClick(HomePage.java:72)
+	at com.enrich.testcases.HomePageTest.clickOnSearchSalonButton(HomePageTest.java:77)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.enrich.testcases.HomePageTest@39c0f4a</td></tr>
+<tr>
+<td title='com.enrich.testcases.HomePageTest.clickOnSignUPButton()'><b>clickOnSignUPButton</b><br>Test class: com.enrich.testcases.HomePageTest</td>
+<td><div><pre>org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;SEZ-LAP-49&apos;, ip: &apos;172.52.80.170&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_171&apos;
+Driver info: driver.version: AndroidDriver
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:125)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:62)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at io.appium.java_client.FindsByAndroidUIAutomator.findElementByAndroidUIAutomator(FindsByAndroidUIAutomator.java:38)
+	at com.enrich.pages.HomePage.signUpButtonClick(HomePage.java:64)
+	at com.enrich.testcases.HomePageTest.clickOnSignUPButton(HomePageTest.java:68)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1328718765", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1328718765'><pre>org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;SEZ-LAP-49&apos;, ip: &apos;172.52.80.170&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_171&apos;
+Driver info: driver.version: AndroidDriver
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:125)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:62)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at io.appium.java_client.FindsByAndroidUIAutomator.findElementByAndroidUIAutomator(FindsByAndroidUIAutomator.java:38)
+	at com.enrich.pages.HomePage.signUpButtonClick(HomePage.java:64)
+	at com.enrich.testcases.HomePageTest.clickOnSignUPButton(HomePageTest.java:68)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.enrich.testcases.HomePageTest@39c0f4a</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.enrich.testcases.SignUpPageTest.checkApplyButtonClickMessage()'><b>checkApplyButtonClickMessage</b><br>Test class: com.enrich.testcases.SignUpPageTest</td>
+<td></td>
+<td>0</td>
+<td>com.enrich.testcases.SignUpPageTest@3bfdc050</td></tr>
+<tr>
+<td title='com.enrich.testcases.SignUpPageTest.checkApplyButtonStatus()'><b>checkApplyButtonStatus</b><br>Test class: com.enrich.testcases.SignUpPageTest</td>
+<td></td>
+<td>0</td>
+<td>com.enrich.testcases.SignUpPageTest@3bfdc050</td></tr>
+<tr>
+<td title='com.enrich.testcases.SignUpPageTest.checkApplyButtonText()'><b>checkApplyButtonText</b><br>Test class: com.enrich.testcases.SignUpPageTest</td>
+<td></td>
+<td>0</td>
+<td>com.enrich.testcases.SignUpPageTest@3bfdc050</td></tr>
+<tr>
+<td title='com.enrich.testcases.SignUpPageTest.checkConnectWithEmailButtonStatus()'><b>checkConnectWithEmailButtonStatus</b><br>Test class: com.enrich.testcases.SignUpPageTest</td>
+<td></td>
+<td>0</td>
+<td>com.enrich.testcases.SignUpPageTest@3bfdc050</td></tr>
+<tr>
+<td title='com.enrich.testcases.SignUpPageTest.checkConnectWithEmailButtonText()'><b>checkConnectWithEmailButtonText</b><br>Test class: com.enrich.testcases.SignUpPageTest</td>
+<td></td>
+<td>0</td>
+<td>com.enrich.testcases.SignUpPageTest@3bfdc050</td></tr>
+<tr>
+<td title='com.enrich.testcases.SignUpPageTest.checkConnectWithEmailFaceBookButtonStatus()'><b>checkConnectWithEmailFaceBookButtonStatus</b><br>Test class: com.enrich.testcases.SignUpPageTest</td>
+<td></td>
+<td>0</td>
+<td>com.enrich.testcases.SignUpPageTest@3bfdc050</td></tr>
+<tr>
+<td title='com.enrich.testcases.SignUpPageTest.checkConnectWithEmailFacebookButtonText()'><b>checkConnectWithEmailFacebookButtonText</b><br>Test class: com.enrich.testcases.SignUpPageTest</td>
+<td></td>
+<td>0</td>
+<td>com.enrich.testcases.SignUpPageTest@3bfdc050</td></tr>
+<tr>
+<td title='com.enrich.testcases.SignUpPageTest.checkConnectWithEmailGoogleButtonStatus()'><b>checkConnectWithEmailGoogleButtonStatus</b><br>Test class: com.enrich.testcases.SignUpPageTest</td>
+<td></td>
+<td>0</td>
+<td>com.enrich.testcases.SignUpPageTest@3bfdc050</td></tr>
+<tr>
+<td title='com.enrich.testcases.SignUpPageTest.checkConnectWithEmailGoogleButtonText()'><b>checkConnectWithEmailGoogleButtonText</b><br>Test class: com.enrich.testcases.SignUpPageTest</td>
+<td></td>
+<td>0</td>
+<td>com.enrich.testcases.SignUpPageTest@3bfdc050</td></tr>
+<tr>
+<td title='com.enrich.testcases.SignUpPageTest.checkCrossIconClick()'><b>checkCrossIconClick</b><br>Test class: com.enrich.testcases.SignUpPageTest</td>
+<td></td>
+<td>0</td>
+<td>com.enrich.testcases.SignUpPageTest@3bfdc050</td></tr>
+<tr>
+<td title='com.enrich.testcases.SignUpPageTest.checkCrossIconStatus()'><b>checkCrossIconStatus</b><br>Test class: com.enrich.testcases.SignUpPageTest</td>
+<td></td>
+<td>0</td>
+<td>com.enrich.testcases.SignUpPageTest@3bfdc050</td></tr>
+<tr>
+<td title='com.enrich.testcases.SignUpPageTest.checkDoYouHaveAReferralCodeCheckboxSelected()'><b>checkDoYouHaveAReferralCodeCheckboxSelected</b><br>Test class: com.enrich.testcases.SignUpPageTest</td>
+<td></td>
+<td>0</td>
+<td>com.enrich.testcases.SignUpPageTest@3bfdc050</td></tr>
+<tr>
+<td title='com.enrich.testcases.SignUpPageTest.checkDoYouHaveAReferralCodeCheckboxText()'><b>checkDoYouHaveAReferralCodeCheckboxText</b><br>Test class: com.enrich.testcases.SignUpPageTest</td>
+<td></td>
+<td>0</td>
+<td>com.enrich.testcases.SignUpPageTest@3bfdc050</td></tr>
+<tr>
+<td title='com.enrich.testcases.SignUpPageTest.checkEnrichImageStatus()'><b>checkEnrichImageStatus</b><br>Test class: com.enrich.testcases.SignUpPageTest</td>
+<td></td>
+<td>0</td>
+<td>com.enrich.testcases.SignUpPageTest@3bfdc050</td></tr>
+<tr>
+<td title='com.enrich.testcases.SignUpPageTest.checkLoginButtonStatus()'><b>checkLoginButtonStatus</b><br>Test class: com.enrich.testcases.SignUpPageTest</td>
+<td></td>
+<td>0</td>
+<td>com.enrich.testcases.SignUpPageTest@3bfdc050</td></tr>
+<tr>
+<td title='com.enrich.testcases.SignUpPageTest.checkLoginButtonText()'><b>checkLoginButtonText</b><br>Test class: com.enrich.testcases.SignUpPageTest</td>
+<td></td>
+<td>0</td>
+<td>com.enrich.testcases.SignUpPageTest@3bfdc050</td></tr>
+<tr>
+<td title='com.enrich.testcases.SignUpPageTest.checkNextIconButtonStatus()'><b>checkNextIconButtonStatus</b><br>Test class: com.enrich.testcases.SignUpPageTest</td>
+<td></td>
+<td>0</td>
+<td>com.enrich.testcases.SignUpPageTest@3bfdc050</td></tr>
+<tr>
+<td title='com.enrich.testcases.SignUpPageTest.checkReferralCodeFieldIsBlank()'><b>checkReferralCodeFieldIsBlank</b><br>Test class: com.enrich.testcases.SignUpPageTest</td>
+<td></td>
+<td>0</td>
+<td>com.enrich.testcases.SignUpPageTest@3bfdc050</td></tr>
+<tr>
+<td title='com.enrich.testcases.SignUpPageTest.checkReferralCodeFieldStatus()'><b>checkReferralCodeFieldStatus</b><br>Test class: com.enrich.testcases.SignUpPageTest</td>
+<td></td>
+<td>0</td>
+<td>com.enrich.testcases.SignUpPageTest@3bfdc050</td></tr>
+<tr>
+<td title='com.enrich.testcases.SignUpPageTest.checkReferralCodeFieldSupplyText()'><b>checkReferralCodeFieldSupplyText</b><br>Test class: com.enrich.testcases.SignUpPageTest</td>
+<td></td>
+<td>0</td>
+<td>com.enrich.testcases.SignUpPageTest@3bfdc050</td></tr>
+<tr>
+<td title='com.enrich.testcases.SignUpPageTest.checkYouHaveAReferralCodeCheckboxStatus()'><b>checkYouHaveAReferralCodeCheckboxStatus</b><br>Test class: com.enrich.testcases.SignUpPageTest</td>
+<td></td>
+<td>0</td>
+<td>com.enrich.testcases.SignUpPageTest@3bfdc050</td></tr>
+<tr>
+<td title='com.enrich.testcases.SignUpPageTest.checkcheckDoYouHaveAReferralCodeCheckboxNotSelected()'><b>checkcheckDoYouHaveAReferralCodeCheckboxNotSelected</b><br>Test class: com.enrich.testcases.SignUpPageTest</td>
+<td></td>
+<td>0</td>
+<td>com.enrich.testcases.SignUpPageTest@3bfdc050</td></tr>
+</table><p>
+</body>
+</html>

@@ -1,0 +1,528 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>TestNG:  Unit Test</title>
+<style type="text/css">
+table caption,table.info_table,table.result,table.passed,table.failed {margin-bottom:10px;border:1px solid #000099;border-collapse:collapse;empty-cells:show;}
+table.info_table td,table.info_table th,table.result td,table.result th,table.passed td,table.passed th,table.failed td,table.failed th {
+border:1px solid #000099;padding:.25em .5em .25em .5em
+}
+table.result th {vertical-align:bottom}
+tr.param th {padding-left:1em;padding-right:1em}
+tr.param td {padding-left:.5em;padding-right:2em}
+td.numi,th.numi,td.numi_attn {
+text-align:right
+}
+tr.total td {font-weight:bold}
+table caption {
+text-align:center;font-weight:bold;
+}
+table.passed tr.stripe td,table tr.passedodd td {background-color: #00AA00;}
+table.passed td,table tr.passedeven td {background-color: #33FF33;}
+table.passed tr.stripe td,table tr.skippedodd td {background-color: #cccccc;}
+table.passed td,table tr.skippedodd td {background-color: #dddddd;}
+table.failed tr.stripe td,table tr.failedodd td,table.result td.numi_attn {background-color: #FF3333;}
+table.failed td,table tr.failedeven td,table.result tr.stripe td.numi_attn {background-color: #DD0000;}
+tr.stripe td,tr.stripe th {background-color: #E6EBF9;}
+p.totop {font-size:85%;text-align:center;border-bottom:2px black solid}
+div.shootout {padding:2em;border:3px #4854A8 solid}
+</style>
+</head>
+<body>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
+<tr><td style="text-align:left;padding-right:2em">Test</td><td class="numi">24</td><td class="numi">24</td><td class="numi">0</td><td class="numi_attn">12</td><td class="numi">855.4 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+</table>
+<table cellspacing="0" cellpadding="0" class="passed" id="summary">
+<tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Start</th><th>Time<br/>(ms)</th></tr>
+<tr><th colspan="4">Test &#8212; failed</th></tr>
+<tr class="failedodd"><td rowspan="12">com.monsanto.testcases.HomePageTest</td><td><a href="#m1"><b>checkConfirmationMessageOnComponentonTaxation</b>  </a></td><td class="numi">1</td><td>1562233059035</td><td class="numi">28016</td></tr><tr class="failedodd"><td><a href="#m2"><b>checkConfirmationSuccessMessageOnComponentonTaxation</b>  </a></td><td class="numi">1</td><td>1562233019883</td><td class="numi">30484</td></tr><tr class="failedodd"><td><a href="#m3"><b>checkCreatedCategory</b>  </a></td><td class="numi">1</td><td>1562232634320</td><td class="numi">10416</td></tr><tr class="failedodd"><td><a href="#m4"><b>checkCreatedComponentonInternationalTaxation</b>  </a></td><td class="numi">1</td><td>1562233151549</td><td class="numi">12582</td></tr><tr class="failedodd"><td><a href="#m5"><b>checkCreatedComponentonStateTaxation</b>  </a></td><td class="numi">1</td><td>1562232966465</td><td class="numi">46011</td></tr><tr class="failedodd"><td><a href="#m6"><b>checkCreatedProduct</b>  </a></td><td class="numi">1</td><td>1562232869160</td><td class="numi">51392</td></tr><tr class="failedodd"><td><a href="#m7"><b>checkCreatedTAG</b>  </a></td><td class="numi">1</td><td>1562232821953</td><td class="numi">13406</td></tr><tr class="failedodd"><td><a href="#m8"><b>checkEditedCategory</b>  </a></td><td class="numi">1</td><td>1562232928838</td><td class="numi">30912</td></tr><tr class="failedodd"><td><a href="#m9"><b>checkIconIsPresentOnConfirmationMessageOnComponentonTaxation</b>  </a></td><td class="numi">1</td><td>1562233113554</td><td class="numi">30211</td></tr><tr class="failedodd"><td><a href="#m10"><b>checkStatusOfAddProductButtonOnHomePage</b>  </a></td><td class="numi">1</td><td>1562232547423</td><td class="numi">29912</td></tr><tr class="failedodd"><td><a href="#m11"><b>checkUpdatedComponentonInternationalTaxation</b>  </a></td><td class="numi">1</td><td>1562233189343</td><td class="numi">33700</td></tr><tr class="failedodd"><td><a href="#m12"><b>checkUpdatedComponentonStateTaxation</b>  </a></td><td class="numi">1</td><td>1562233170726</td><td class="numi">12356</td></tr>
+<tr><th colspan="4">Test &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="17">com.monsanto.testcases.HomePageTest</td><td><a href="#m13"><b>checkCatalogIcon</b>  </a></td><td class="numi">1</td><td>1562232492733</td><td class="numi">4224</td></tr><tr class="passedodd"><td><a href="#m14"><b>checkCreatedBrandUnit</b>  </a></td><td class="numi">1</td><td>1562232699696</td><td class="numi">16303</td></tr><tr class="passedodd"><td><a href="#m15"><b>checkCreatedCase</b>  </a></td><td class="numi">1</td><td>1562232770123</td><td class="numi">14706</td></tr><tr class="passedodd"><td><a href="#m16"><b>checkCreatedTaxGroupTaxation</b>  </a></td><td class="numi">1</td><td>1562233229328</td><td class="numi">23657</td></tr><tr class="passedodd"><td><a href="#m17"><b>checkEditedCategory1</b>  </a></td><td class="numi">1</td><td>1562232653939</td><td class="numi">37457</td></tr><tr class="passedodd"><td><a href="#m18"><b>checkLogoOnHomePage</b>  </a></td><td class="numi">1</td><td>1562232478068</td><td class="numi">7047</td></tr><tr class="passedodd"><td><a href="#m19"><b>checkOKButtonConfirmationMessageOnComponentonTaxation</b>  </a></td><td class="numi">1</td><td>1562233095287</td><td class="numi">10224</td></tr><tr class="passedodd"><td><a href="#m20"><b>checkOrganizationIcon</b>  </a></td><td class="numi">1</td><td>1562232504908</td><td class="numi">4364</td></tr><tr class="passedodd"><td><a href="#m21"><b>checkStatusOfAddBusinessUnitButtonOnHomePage</b>  </a></td><td class="numi">1</td><td>1562232599453</td><td class="numi">4025</td></tr><tr class="passedodd"><td><a href="#m22"><b>checkStatusOfAddCaseButtonOnHomePage</b>  </a></td><td class="numi">1</td><td>1562232611421</td><td class="numi">4255</td></tr><tr class="passedodd"><td><a href="#m23"><b>checkStatusOfAddCategoryButtonOnHomePage</b>  </a></td><td class="numi">1</td><td>1562232585268</td><td class="numi">4096</td></tr><tr class="passedodd"><td><a href="#m24"><b>checkStatusOfAddTagButtonOnHomePage</b>  </a></td><td class="numi">1</td><td>1562232623089</td><td class="numi">3846</td></tr><tr class="passedodd"><td><a href="#m25"><b>checkTaxationIconIcon</b>  </a></td><td class="numi">1</td><td>1562232517456</td><td class="numi">4492</td></tr><tr class="passedodd"><td><a href="#m26"><b>checkUpdatedBrandUnit</b>  </a></td><td class="numi">1</td><td>1562232724141</td><td class="numi">38211</td></tr><tr class="passedodd"><td><a href="#m27"><b>checkUpdatedCase</b>  </a></td><td class="numi">1</td><td>1562232792059</td><td class="numi">23872</td></tr><tr class="passedodd"><td><a href="#m28"><b>checkUpdatedTag</b>  </a></td><td class="numi">1</td><td>1562232842528</td><td class="numi">18731</td></tr><tr class="passedodd"><td><a href="#m29"><b>checkVendorIcon</b>  </a></td><td class="numi">1</td><td>1562232529882</td><td class="numi">4288</td></tr>
+<tr class="passedeven"><td rowspan="7">com.monsanto.testcases.LoginPageTest</td><td><a href="#m30"><b>clickOnLoginButton</b>  </a></td><td class="numi">1</td><td>1562232469847</td><td class="numi">280</td></tr><tr class="passedeven"><td><a href="#m31"><b>loginPageLabelTest</b>  </a></td><td class="numi">1</td><td>1562232430483</td><td class="numi">98</td></tr><tr class="passedeven"><td><a href="#m32"><b>loginPageNotYetRegisteredLabelTest</b>  </a></td><td class="numi">1</td><td>1562232461735</td><td class="numi">52</td></tr><tr class="passedeven"><td><a href="#m33"><b>loginPagePasswordLabelTest</b>  </a></td><td class="numi">1</td><td>1562232446142</td><td class="numi">45</td></tr><tr class="passedeven"><td><a href="#m34"><b>loginPageRemeberMeLabelTest</b>  </a></td><td class="numi">1</td><td>1562232454640</td><td class="numi">58</td></tr><tr class="passedeven"><td><a href="#m35"><b>loginPageTitleTest</b>  </a></td><td class="numi">1</td><td>1562232409797</td><td class="numi">19</td></tr><tr class="passedeven"><td><a href="#m36"><b>loginPageUserNameLabelTest</b>  </a></td><td class="numi">1</td><td>1562232438731</td><td class="numi">56</td></tr>
+</table>
+<h1>Test</h1>
+<h2 id="m1">com.monsanto.testcases.HomePageTest:checkEditedCategory</h2>
+<div style="padding-left:3em">
+<p>no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[@class=&apos;btn edit-btn margin-right-20&apos;]&quot;}
+  (Session info: chrome=75.0.3770.100)
+  (Driver info: chromedriver=2.42.591088 (7b2b2dca23cca0862f674758c9a3933e685c27d5),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;SEZ-LAP-49&apos;, ip: &apos;172.52.80.170&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_171&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.42.591088 (7b2b2dca23cca0..., userDataDir: C:\Users\amit.k\AppData\Loc...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:65252}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 75.0.3770.100, webStorageEnabled: true}
+Session ID: a9113309f5fa44e6f11ef655f08530f9
+*** Element info: {Using=xpath, value=//button[@class=&apos;btn edit-btn margin-right-20&apos;]}</p>
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+<br/>at java.lang.reflect.Constructor.newInstance(Unknown Source)
+<br/>at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+<br/>at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+<br/>at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+<br/>at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+<br/>at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+<br/>at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+<br/>at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+<br/>at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+<br/>at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+<br/>at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+<br/>at com.sun.proxy.$Proxy9.click(Unknown Source)
+<br/>at com.monsanto.pages.HomePage.methodToClickOnProductEditbuttonProductList(HomePage.java:881)
+<br/>at com.monsanto.testcases.HomePageTest.checkEditedCategory(HomePageTest.java:557)
+<br/>25 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m2">com.monsanto.testcases.HomePageTest:checkUpdatedComponentonStateTaxation</h2>
+<div style="padding-left:3em">
+<p>unknown error: Element &lt;th _ngcontent-c6=&quot;&quot; class=&quot;ui-sortable-column&quot; tabindex=&quot;0&quot;&gt;...&lt;/th&gt; is not clickable at point (556, 174). Other element would receive the click: &lt;div class=&quot;swal2-container swal2-center swal2-fade swal2-shown&quot; style=&quot;overflow-y: auto;&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=75.0.3770.100)
+  (Driver info: chromedriver=2.42.591088 (7b2b2dca23cca0862f674758c9a3933e685c27d5),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;SEZ-LAP-49&apos;, ip: &apos;172.52.80.170&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_171&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.42.591088 (7b2b2dca23cca0..., userDataDir: C:\Users\amit.k\AppData\Loc...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:49156}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 75.0.3770.100, webStorageEnabled: true}
+Session ID: 2f8f03775132fb4c232d1b168fb06ced</p>
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+<br/>at java.lang.reflect.Constructor.newInstance(Unknown Source)
+<br/>at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+<br/>at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+<br/>at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+<br/>at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+<br/>at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+<br/>at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+<br/>at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+<br/>at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+<br/>at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+<br/>at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+<br/>at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+<br/>at java.lang.reflect.Method.invoke(Unknown Source)
+<br/>at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+<br/>at com.sun.proxy.$Proxy9.click(Unknown Source)
+<br/>at com.monsanto.pages.HomePage.clickOncomponentSortColumn(HomePage.java:1212)
+<br/>at com.monsanto.testcases.HomePageTest.checkUpdatedComponentonStateTaxation(HomePageTest.java:752)
+<br/>25 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m3">com.monsanto.testcases.HomePageTest:checkCreatedCategory</h2>
+<div style="padding-left:3em">
+<p>unknown error: Element &lt;button _ngcontent-c6=&quot;&quot; class=&quot;btn btn-danger&quot; type=&quot;button&quot;&gt;...&lt;/button&gt; is not clickable at point (1157, 97). Other element would receive the click: &lt;div class=&quot;swal2-container swal2-center swal2-fade swal2-shown&quot; style=&quot;overflow-y: auto;&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=75.0.3770.100)
+  (Driver info: chromedriver=2.42.591088 (7b2b2dca23cca0862f674758c9a3933e685c27d5),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;SEZ-LAP-49&apos;, ip: &apos;172.52.80.170&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_171&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.42.591088 (7b2b2dca23cca0..., userDataDir: C:\Users\amit.k\AppData\Loc...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:64826}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 75.0.3770.100, webStorageEnabled: true}
+Session ID: 7e2c37e90421d1b66aba39ece1201c05</p>
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+<br/>at java.lang.reflect.Constructor.newInstance(Unknown Source)
+<br/>at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+<br/>at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+<br/>at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+<br/>at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+<br/>at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+<br/>at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+<br/>at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+<br/>at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+<br/>at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+<br/>at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+<br/>at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+<br/>at java.lang.reflect.Method.invoke(Unknown Source)
+<br/>at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+<br/>at com.sun.proxy.$Proxy9.click(Unknown Source)
+<br/>at com.monsanto.pages.HomePage.methodToClickOnSearchCategoryIcon(HomePage.java:1006)
+<br/>at com.monsanto.testcases.HomePageTest.checkCreatedCategory(HomePageTest.java:167)
+<br/>25 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m4">com.monsanto.testcases.HomePageTest:checkUpdatedComponentonInternationalTaxation</h2>
+<div style="padding-left:3em">
+<p>no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;(//*[@class=&apos;ui-sortable-column&apos;])[1]&quot;}
+  (Session info: chrome=75.0.3770.100)
+  (Driver info: chromedriver=2.42.591088 (7b2b2dca23cca0862f674758c9a3933e685c27d5),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;SEZ-LAP-49&apos;, ip: &apos;172.52.80.170&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_171&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.42.591088 (7b2b2dca23cca0..., userDataDir: C:\Users\amit.k\AppData\Loc...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:49196}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 75.0.3770.100, webStorageEnabled: true}
+Session ID: 0e197a9e4efe48238a6ea79a0416baa4
+*** Element info: {Using=xpath, value=(//*[@class=&apos;ui-sortable-column&apos;])[1]}</p>
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+<br/>at java.lang.reflect.Constructor.newInstance(Unknown Source)
+<br/>at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+<br/>at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+<br/>at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+<br/>at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+<br/>at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+<br/>at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+<br/>at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+<br/>at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+<br/>at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+<br/>at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+<br/>at com.sun.proxy.$Proxy9.click(Unknown Source)
+<br/>at com.monsanto.pages.HomePage.clickOncomponentSortColumn(HomePage.java:1212)
+<br/>at com.monsanto.testcases.HomePageTest.checkUpdatedComponentonInternationalTaxation(HomePageTest.java:824)
+<br/>25 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m5">com.monsanto.testcases.HomePageTest:checkCreatedComponentonStateTaxation</h2>
+<div style="padding-left:3em">
+<p>Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator &apos;By.xpath: //*[text()=&apos;Add Tax Component&apos;]&apos; (tried for 10 second(s) with 500 milliseconds interval)</p>
+org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+<br/>at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+<br/>at com.monsanto.util.TestUtil.explicitWaitForElements(TestUtil.java:45)
+<br/>at com.monsanto.testcases.HomePageTest.checkCreatedComponentonStateTaxation(HomePageTest.java:597)
+<br/>25 lines not shown
+<p>Caused by no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[text()=&apos;Add Tax Component&apos;]&quot;}
+  (Session info: chrome=75.0.3770.100)
+  (Driver info: chromedriver=2.42.591088 (7b2b2dca23cca0862f674758c9a3933e685c27d5),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;SEZ-LAP-49&apos;, ip: &apos;172.52.80.170&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_171&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.42.591088 (7b2b2dca23cca0..., userDataDir: C:\Users\amit.k\AppData\Loc...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:65294}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 75.0.3770.100, webStorageEnabled: true}
+Session ID: ac1059926468f031c96e5a38c07de67a
+*** Element info: {Using=xpath, value=//*[text()=&apos;Add Tax Component&apos;]}</p>
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+<br/>at java.lang.reflect.Constructor.newInstance(Unknown Source)
+<br/>at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+<br/>at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+<br/>at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+<br/>at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+<br/>at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+<br/>at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+<br/>at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+<br/>at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+<br/>at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+<br/>at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+<br/>at com.sun.proxy.$Proxy9.isDisplayed(Unknown Source)
+<br/>at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
+<br/>at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
+<br/>at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
+<br/>at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
+<br/>at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:670)
+<br/>at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:666)
+<br/>at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+<br/>at com.monsanto.util.TestUtil.explicitWaitForElements(TestUtil.java:45)
+<br/>at com.monsanto.testcases.HomePageTest.checkCreatedComponentonStateTaxation(HomePageTest.java:597)
+<br/>25 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m6">com.monsanto.testcases.HomePageTest:checkStatusOfAddProductButtonOnHomePage</h2>
+<div style="padding-left:3em">
+<p>no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[text()=&apos;Add Product&apos;]&quot;}
+  (Session info: chrome=75.0.3770.100)
+  (Driver info: chromedriver=2.42.591088 (7b2b2dca23cca0862f674758c9a3933e685c27d5),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;SEZ-LAP-49&apos;, ip: &apos;172.52.80.170&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_171&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.42.591088 (7b2b2dca23cca0..., userDataDir: C:\Users\amit.k\AppData\Loc...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:64530}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 75.0.3770.100, webStorageEnabled: true}
+Session ID: 39eddbc7a0bddc5c65cd2cbea7cec9e2
+*** Element info: {Using=xpath, value=//*[text()=&apos;Add Product&apos;]}</p>
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+<br/>at java.lang.reflect.Constructor.newInstance(Unknown Source)
+<br/>at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+<br/>at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+<br/>at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+<br/>at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+<br/>at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+<br/>at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+<br/>at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+<br/>at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+<br/>at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+<br/>at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+<br/>at com.sun.proxy.$Proxy9.isEnabled(Unknown Source)
+<br/>at com.monsanto.pages.HomePage.addProductButtonStatus(HomePage.java:674)
+<br/>at com.monsanto.testcases.HomePageTest.checkStatusOfAddProductButtonOnHomePage(HomePageTest.java:92)
+<br/>25 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m7">com.monsanto.testcases.HomePageTest:checkCreatedComponentonInternationalTaxation</h2>
+<div style="padding-left:3em">
+<p>expected [22autointernational] but found [CGST]</p>
+org.testng.Assert.fail(Assert.java:94)
+<br/>at org.testng.Assert.failNotEquals(Assert.java:494)
+<br/>at org.testng.Assert.assertEquals(Assert.java:123)
+<br/>at org.testng.Assert.assertEquals(Assert.java:176)
+<br/>at org.testng.Assert.assertEquals(Assert.java:186)
+<br/>at com.monsanto.testcases.HomePageTest.checkCreatedComponentonInternationalTaxation(HomePageTest.java:791)
+<br/>25 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m8">com.monsanto.testcases.HomePageTest:checkConfirmationMessageOnComponentonTaxation</h2>
+<div style="padding-left:3em">
+<p>no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@for=&apos;inlinecheckbox1&apos;]&quot;}
+  (Session info: chrome=75.0.3770.100)
+  (Driver info: chromedriver=2.42.591088 (7b2b2dca23cca0862f674758c9a3933e685c27d5),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;SEZ-LAP-49&apos;, ip: &apos;172.52.80.170&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_171&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.42.591088 (7b2b2dca23cca0..., userDataDir: C:\Users\amit.k\AppData\Loc...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:65382}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 75.0.3770.100, webStorageEnabled: true}
+Session ID: 9914f8fe8ed7ca0656aad0244aa6f9ab
+*** Element info: {Using=xpath, value=//*[@for=&apos;inlinecheckbox1&apos;]}</p>
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+<br/>at java.lang.reflect.Constructor.newInstance(Unknown Source)
+<br/>at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+<br/>at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+<br/>at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+<br/>at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+<br/>at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+<br/>at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+<br/>at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+<br/>at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+<br/>at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+<br/>at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+<br/>at com.sun.proxy.$Proxy9.getWrappedElement(Unknown Source)
+<br/>at org.openqa.selenium.remote.internal.WebElementToJsonConverter.apply(WebElementToJsonConverter.java:50)
+<br/>at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+<br/>at java.util.Spliterators$ArraySpliterator.forEachRemaining(Unknown Source)
+<br/>at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+<br/>at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+<br/>at java.util.stream.ReduceOps$ReduceOp.evaluateSequential(Unknown Source)
+<br/>at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+<br/>at java.util.stream.ReferencePipeline.collect(Unknown Source)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:484)
+<br/>at com.monsanto.util.TestUtil.javaScriptExecutor(TestUtil.java:114)
+<br/>at com.monsanto.testcases.HomePageTest.checkConfirmationMessageOnComponentonTaxation(HomePageTest.java:661)
+<br/>25 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m9">com.monsanto.testcases.HomePageTest:checkCreatedTAG</h2>
+<div style="padding-left:3em">
+<p>unknown error: Element &lt;th _ngcontent-c6=&quot;&quot; class=&quot;ui-sortable-column&quot; tabindex=&quot;0&quot;&gt;...&lt;/th&gt; is not clickable at point (712, 174). Other element would receive the click: &lt;div class=&quot;swal2-container swal2-center swal2-fade swal2-shown&quot; style=&quot;overflow-y: auto;&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=75.0.3770.100)
+  (Driver info: chromedriver=2.42.591088 (7b2b2dca23cca0862f674758c9a3933e685c27d5),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;SEZ-LAP-49&apos;, ip: &apos;172.52.80.170&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_171&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.42.591088 (7b2b2dca23cca0..., userDataDir: C:\Users\amit.k\AppData\Loc...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:65125}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 75.0.3770.100, webStorageEnabled: true}
+Session ID: 15fd74ffbedddf226e3fa79d81733f2d</p>
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+<br/>at java.lang.reflect.Constructor.newInstance(Unknown Source)
+<br/>at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+<br/>at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+<br/>at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+<br/>at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+<br/>at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+<br/>at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+<br/>at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+<br/>at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+<br/>at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+<br/>at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+<br/>at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+<br/>at java.lang.reflect.Method.invoke(Unknown Source)
+<br/>at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+<br/>at com.sun.proxy.$Proxy9.click(Unknown Source)
+<br/>at com.monsanto.pages.HomePage.methodToClickOnTagColumnName(HomePage.java:1172)
+<br/>at com.monsanto.testcases.HomePageTest.checkCreatedTAG(HomePageTest.java:399)
+<br/>25 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m10">com.monsanto.testcases.HomePageTest:checkConfirmationSuccessMessageOnComponentonTaxation</h2>
+<div style="padding-left:3em">
+<p>no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[text()=&apos;Success&apos;]&quot;}
+  (Session info: chrome=75.0.3770.100)
+  (Driver info: chromedriver=2.42.591088 (7b2b2dca23cca0862f674758c9a3933e685c27d5),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;SEZ-LAP-49&apos;, ip: &apos;172.52.80.170&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_171&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.42.591088 (7b2b2dca23cca0..., userDataDir: C:\Users\amit.k\AppData\Loc...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:65341}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 75.0.3770.100, webStorageEnabled: true}
+Session ID: 914307de4fdb15177ce71f1ed25bc6b0
+*** Element info: {Using=xpath, value=//*[text()=&apos;Success&apos;]}</p>
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+<br/>at java.lang.reflect.Constructor.newInstance(Unknown Source)
+<br/>at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+<br/>at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+<br/>at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+<br/>at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+<br/>at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+<br/>at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+<br/>at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+<br/>at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+<br/>at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+<br/>at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+<br/>at com.sun.proxy.$Proxy9.getText(Unknown Source)
+<br/>at com.monsanto.pages.HomePage.getMessageText_Success_OfComponentConfirmation(HomePage.java:1253)
+<br/>at com.monsanto.testcases.HomePageTest.checkConfirmationSuccessMessageOnComponentonTaxation(HomePageTest.java:640)
+<br/>25 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m11">com.monsanto.testcases.HomePageTest:checkIconIsPresentOnConfirmationMessageOnComponentonTaxation</h2>
+<div style="padding-left:3em">
+<p>no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@class=&apos;swal2-icon swal2-success swal2-animate-success-icon&apos;]&quot;}
+  (Session info: chrome=75.0.3770.100)
+  (Driver info: chromedriver=2.42.591088 (7b2b2dca23cca0862f674758c9a3933e685c27d5),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;SEZ-LAP-49&apos;, ip: &apos;172.52.80.170&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_171&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.42.591088 (7b2b2dca23cca0..., userDataDir: C:\Users\amit.k\AppData\Loc...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:65457}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 75.0.3770.100, webStorageEnabled: true}
+Session ID: cc63be629622700e18788d9d01ecef36
+*** Element info: {Using=xpath, value=//*[@class=&apos;swal2-icon swal2-success swal2-animate-success-icon&apos;]}</p>
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+<br/>at java.lang.reflect.Constructor.newInstance(Unknown Source)
+<br/>at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+<br/>at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+<br/>at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+<br/>at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+<br/>at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+<br/>at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+<br/>at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+<br/>at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+<br/>at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+<br/>at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+<br/>at com.sun.proxy.$Proxy9.isEnabled(Unknown Source)
+<br/>at com.monsanto.pages.HomePage.checkIconOnComponentConfirmationMessageBox(HomePage.java:1268)
+<br/>at com.monsanto.testcases.HomePageTest.checkIconIsPresentOnConfirmationMessageOnComponentonTaxation(HomePageTest.java:719)
+<br/>25 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m12">com.monsanto.testcases.HomePageTest:checkCreatedProduct</h2>
+<div style="padding-left:3em">
+<p>no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;(//*[@class=&apos;field-control&apos;])[10]&quot;}
+  (Session info: chrome=75.0.3770.100)
+  (Driver info: chromedriver=2.42.591088 (7b2b2dca23cca0862f674758c9a3933e685c27d5),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;SEZ-LAP-49&apos;, ip: &apos;172.52.80.170&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_171&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.42.591088 (7b2b2dca23cca0..., userDataDir: C:\Users\amit.k\AppData\Loc...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:65203}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 75.0.3770.100, webStorageEnabled: true}
+Session ID: ccf999d7af417dc5bce399b2c85f464e
+*** Element info: {Using=xpath, value=(//*[@class=&apos;field-control&apos;])[10]}</p>
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+<br/>at java.lang.reflect.Constructor.newInstance(Unknown Source)
+<br/>at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+<br/>at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+<br/>at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+<br/>at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+<br/>at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+<br/>at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+<br/>at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+<br/>at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+<br/>at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+<br/>at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+<br/>at com.sun.proxy.$Proxy9.click(Unknown Source)
+<br/>at com.monsanto.pages.HomePage.methodToClickOnBrandUnitDropDown(HomePage.java:788)
+<br/>at com.monsanto.testcases.HomePageTest.checkCreatedProduct(HomePageTest.java:510)
+<br/>25 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m13">com.monsanto.testcases.LoginPageTest:loginPageNotYetRegisteredLabelTest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m14">com.monsanto.testcases.HomePageTest:checkCatalogIcon</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m15">com.monsanto.testcases.HomePageTest:checkOrganizationIcon</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m16">com.monsanto.testcases.HomePageTest:checkLogoOnHomePage</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m17">com.monsanto.testcases.HomePageTest:checkCreatedCase</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m18">com.monsanto.testcases.HomePageTest:checkUpdatedBrandUnit</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m19">com.monsanto.testcases.HomePageTest:checkUpdatedTag</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m20">com.monsanto.testcases.HomePageTest:checkTaxationIconIcon</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m21">com.monsanto.testcases.HomePageTest:checkStatusOfAddCaseButtonOnHomePage</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m22">com.monsanto.testcases.HomePageTest:checkStatusOfAddTagButtonOnHomePage</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m23">com.monsanto.testcases.HomePageTest:checkEditedCategory1</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m24">com.monsanto.testcases.HomePageTest:checkOKButtonConfirmationMessageOnComponentonTaxation</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m25">com.monsanto.testcases.HomePageTest:checkCreatedTaxGroupTaxation</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m26">com.monsanto.testcases.HomePageTest:checkVendorIcon</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m27">com.monsanto.testcases.HomePageTest:checkStatusOfAddBusinessUnitButtonOnHomePage</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m28">com.monsanto.testcases.LoginPageTest:loginPagePasswordLabelTest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m29">com.monsanto.testcases.LoginPageTest:loginPageLabelTest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m30">com.monsanto.testcases.LoginPageTest:loginPageUserNameLabelTest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m31">com.monsanto.testcases.HomePageTest:checkUpdatedCase</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m32">com.monsanto.testcases.LoginPageTest:loginPageTitleTest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m33">com.monsanto.testcases.HomePageTest:checkStatusOfAddCategoryButtonOnHomePage</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m34">com.monsanto.testcases.HomePageTest:checkCreatedBrandUnit</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m35">com.monsanto.testcases.LoginPageTest:clickOnLoginButton</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m36">com.monsanto.testcases.LoginPageTest:loginPageRemeberMeLabelTest</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+</body></html>
